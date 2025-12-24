@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Natal do Alex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 id="titulo">Você quer ver a mensagem de Natal do Alex?</h1>
+    <div class="botoes">
+        <button onclick="escolherMensagem('sim')">Sim</button>
+        <button onclick="escolherMensagem('nao')">Não</button>
+    </div>
+</header>
+
+<main class="conteudo">
+    <label for="pessoa">Escolha quem você é:</label>
+    <select id="pessoa">
+        <option value="">Selecione</option>
+        <option value="Mia">Mia</option>
+        <option value="Felipe Maia">Felipe Maia</option>
+        <option value="Amanda">Amanda</option>
+        <option value="Sor Gabriel">Sor Gabriel</option>
+    </select>
+
+    <p id="mensagem"></p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
