@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #0b2e1a;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* HEADER NA FRENTE */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1000;
+}
+
+.botoes button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    margin-top: 180px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    position: relative;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/* LUZINHAS */
+.luz {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px currentColor;
+    animation: piscar 1.2s infinite alternate;
+    z-index: 1;
+    pointer-events: none;
+}
+#mensagem{
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+}
+@keyframes piscar {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
